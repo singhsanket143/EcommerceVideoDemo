@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
 
 app.use('/api', apiRouter);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log("Server started successfully");
 });
